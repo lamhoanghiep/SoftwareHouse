@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-SoftwareHouse.Web-F6C7700D-683C-4C92-8FAE-A09D28288A15</UserSecretsId>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Frontend\Homepage\Components\Demo\Demo.tsx" />
+    <None Remove="Frontend\Homepage\index.tsx" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoftwareHouse.Contract\SoftwareHouse.Contract.csproj" />
+    <ProjectReference Include="..\SoftwareHouse.DataAccess\SoftwareHouse.DataAccess.csproj" />
+    <ProjectReference Include="..\SoftwareHouse.Services\SoftwareHouse.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Frontend\Homepage\Components\Demo\Demo.tsx" />
+    <TypeScriptCompile Include="Frontend\Homepage\index.tsx" />
+  </ItemGroup>
+
+</Project>
