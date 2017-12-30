@@ -53,5 +53,11 @@ namespace SoftwareHouse.Services.Services
             _projectRepository.Add(project);
             return CommonResult.Success();
         }
+
+        public CommonResult Delete(int id)
+        {
+            _projectRepository.Delete(id);
+            return CommonResult.Success();
+        }
     }
 }

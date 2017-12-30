@@ -28,6 +28,16 @@ namespace SoftwareHouse.DataAccess.Repositories
             _dbContext.SaveChanges();
         }
 
+        public void Delete(int id)
+        {
+            var project = _dbContext.Projects.First(x => x.Id == id);
+            if(project != null && project.IsDeleted == false)
+            {
+                project.IsDeleted = true;
+                _dbContext.SaveChanges();
+            }
+        }
+
         public List<ProjectDto> GetAll()
         {
             return _dbContext.Projects.Where(x => x.IsDeleted == false).Select(x => new ProjectDto { Id = x.Id, Name = x.Name, Description = x.Description, CreationDate = x.CreationDate }).ToList();

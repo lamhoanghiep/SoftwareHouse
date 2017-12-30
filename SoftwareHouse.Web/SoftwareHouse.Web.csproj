@@ -6,11 +6,6 @@
     <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Frontend\Homepage\Components\Demo\Demo.tsx" />
-    <None Remove="Frontend\Homepage\index.tsx" />
-  </ItemGroup>
-
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
@@ -26,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Frontend\Home\" />
+    <Folder Include="Frontend\Projects\" />
+    <Folder Include="Frontend\Shared\Components\" />
+    <Folder Include="Frontend\Shared\Styles\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -33,11 +32,6 @@
     <ProjectReference Include="..\SoftwareHouse.Contract\SoftwareHouse.Contract.csproj" />
     <ProjectReference Include="..\SoftwareHouse.DataAccess\SoftwareHouse.DataAccess.csproj" />
     <ProjectReference Include="..\SoftwareHouse.Services\SoftwareHouse.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="Frontend\Homepage\Components\Demo\Demo.tsx" />
-    <TypeScriptCompile Include="Frontend\Homepage\index.tsx" />
   </ItemGroup>
 
 </Project>

@@ -7,8 +7,6 @@ const paths = {
 };
 const config = {
     entry: {
-        //bundles used on specific page
-        homepage: './Frontend/Homepage/index.tsx',
         libs: [
             'bootstrap',
             'bootstrap/dist/css/bootstrap.css',

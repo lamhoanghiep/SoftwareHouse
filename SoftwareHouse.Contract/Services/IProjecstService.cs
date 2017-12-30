@@ -11,5 +11,6 @@ namespace SoftwareHouse.Contract.Services
         List<ProjectDto> GetAll();
         CommonResult<ProjectDto> GetById(int id);
         CommonResult Add(AddProjectDto project);
+        CommonResult Delete(int id);
     }
 }
