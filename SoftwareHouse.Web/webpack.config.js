@@ -7,6 +7,7 @@ const paths = {
 };
 const config = {
     entry: {
+        home: "./Frontend/Home/home.scss",
         libs: [
             'bootstrap',
             'bootstrap/dist/css/bootstrap.css',
