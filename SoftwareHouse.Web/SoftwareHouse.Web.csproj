@@ -26,6 +26,7 @@
     <Folder Include="Frontend\Shared\Components\" />
     <Folder Include="Frontend\Shared\Styles\" />
     <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\dist\" />
   </ItemGroup>
 
   <ItemGroup>

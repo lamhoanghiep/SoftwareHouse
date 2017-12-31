@@ -1,4 +1,5 @@
-﻿.banner{
+﻿@import '../Shared/Styles/breakpoints.scss';
+.banner{
     @media(min-width: $breakpoint-md){
         margin:40px 0 100px;
     }
