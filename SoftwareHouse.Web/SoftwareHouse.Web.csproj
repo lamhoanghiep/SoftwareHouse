@@ -3,19 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-SoftwareHouse.Web-F6C7700D-683C-4C92-8FAE-A09D28288A15</UserSecretsId>
-    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Frontend\Home\tofixbug.ts" />
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
+    <None Remove="Frontend\Projects\Components\EmptyListWarning\EmptyListWarning.tsx" />
+    <None Remove="Frontend\Projects\Components\ProjectListSummary\ProjectListSummary.tsx" />
+    <None Remove="Frontend\Projects\Components\ProjectsListContainer\ProjectsListContainer.tsx" />
+    <None Remove="Frontend\Projects\index.tsx" />
+    <None Remove="Frontend\Projects\Models\Project.ts" />
+    <None Remove="Frontend\Shared\Components\Button.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,11 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Frontend\Projects\" />
-    <Folder Include="Frontend\Shared\Components\" />
-    <Folder Include="Frontend\Shared\Styles\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,7 +40,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="Frontend\Home\tofixbug.ts" />
+    <TypeScriptCompile Include="Frontend\Projects\Components\EmptyListWarning\EmptyListWarning.tsx" />
+    <TypeScriptCompile Include="Frontend\Projects\Components\ProjectListSummary\ProjectListSummary.tsx" />
+    <TypeScriptCompile Include="Frontend\Projects\Components\ProjectsListContainer\ProjectsListContainer.tsx" />
+    <TypeScriptCompile Include="Frontend\Projects\index.tsx" />
+    <TypeScriptCompile Include="Frontend\Projects\Models\Project.ts" />
+    <TypeScriptCompile Include="Frontend\Shared\Components\Button.tsx" />
   </ItemGroup>
 
 </Project>

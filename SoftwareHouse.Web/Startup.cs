@@ -16,6 +16,7 @@ using SoftwareHouse.Contract.Repositories;
 using SoftwareHouse.DataAccess.Repositories;
 using SoftwareHouse.Contract.Services;
 using SoftwareHouse.Services.Services;
+using Newtonsoft.Json.Serialization;
 
 namespace SoftwareHouse.Web
 {
@@ -41,9 +42,11 @@ namespace SoftwareHouse.Web
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IProjectsRepository, ProjectsRepository>();
-            services.AddScoped<IProjecstService, ProjectsService>();
+            services.AddScoped<IProjectsService, ProjectsService>();
 
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => {
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

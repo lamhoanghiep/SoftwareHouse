@@ -8,7 +8,7 @@ using SoftwareHouse.Contract.Common;
 
 namespace SoftwareHouse.Services.Services
 {
-    public class ProjectsService : IProjecstService
+    public class ProjectsService : IProjectsService
     {
         private readonly IProjectsRepository _projectRepository;
 

@@ -8,6 +8,7 @@ const paths = {
 const config = {
     entry: {
         home: "./Frontend/Home/home.scss",
+        projects: "./Frontend/Projects/index.tsx",
         libs: [
             'bootstrap',
             'bootstrap/dist/css/bootstrap.css',

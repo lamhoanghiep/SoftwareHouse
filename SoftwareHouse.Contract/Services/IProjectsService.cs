@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SoftwareHouse.Contract.Services
 {
-    public interface IProjecstService
+    public interface IProjectsService
     {
         List<ProjectDto> GetAll();
         CommonResult<ProjectDto> GetById(int id);
